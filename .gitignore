@@ -3,5 +3,4 @@
 *.json
 *.sqlite3
 *.sublime-project
-settings.py
 pimanager/settings_secret.py

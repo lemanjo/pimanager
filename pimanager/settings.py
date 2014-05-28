@@ -10,12 +10,13 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Function for correct server timezone
 from lib.timezone import gettz
 
-# Import sensitive information
+# Import secret key or gen one if needed.
 try:
-    from settings_secret import *
-
+    from secret_key import *
 except ImportError:
-    pass
+    SETTINGS_DIR=os.path.abspath(os.path.dirname(__file__))
+    generate_secret_key(os.path.join(SETTINGS_DIR, 'secret_key.py'))
+    from secret_key import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
@@ -24,9 +25,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '#l026rl03rq0+ab1nmdhwz3qxdl_2z#+du!i%@(p41gh0e+vu='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
