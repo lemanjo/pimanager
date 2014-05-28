@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pamauth',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -47,6 +48,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'pimanager.lib.middleware.RequireLoginMiddleware',
 )
 
 ROOT_URLCONF = 'pimanager.urls'
@@ -82,3 +84,21 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Template dirs
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__),'templates'),
+)
+
+
+# Login variables
+LOGIN_URL = '/login'
+
+# Login needed (default all sites)
+LOGIN_REQUIRED_URLS = (
+    r'/(.*)$',
+)
+LOGIN_REQUIRED_URLS_EXCEPTIONS = (
+    r'/login(.*)$',
+    r'/logout(.*)$',
+)

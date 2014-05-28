@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>piManager - Login</title>
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<style type="text/css">
+			.login-form {
+				font-size: 12px;
+			}
+
+			h1 {
+				font-weight: normal;
+				font-family: Lobster, cursive;
+			}
+		</style>
+		</head>
+		<body>
+			<h1><span style="color: red;">pi</span>Manager</h1>
+			<form class="login-form" action="/" method="post">
+				{% csrf_token %}
+				username:
+				<input type="text" name="username" value="{{ username }}" autofocus/><br />
+				password:
+				<input type="password" name="password" value="" /><br />
+
+				<input type="submit" value="Log In" />
+			</form>
+			<span style="color: red">{{ state }}</span>
+		</body>
+</html>
