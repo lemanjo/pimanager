@@ -1,2 +1,5 @@
 *.pyc
 *.json
+*.sqlite3
+*.sublime-project
+settings.py

@@ -1,0 +1,572 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"login",
+				"login_required"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"authe",
+				"authenticate"
+			],
+			[
+				"Http",
+				"HttpResponseRedirect"
+			],
+			[
+				"is",
+				"is_authenticated"
+			],
+			[
+				"Ht",
+				"HttpResponse"
+			],
+			[
+				"Htt",
+				"HttpResponseRedirect"
+			],
+			[
+				"H",
+				"HttpResponseRedirect"
+			],
+			[
+				"name",
+				"name"
+			],
+			[
+				"c",
+				"CharField"
+			],
+			[
+				"mo",
+				"models"
+			],
+			[
+				"mode",
+				"Model"
+			],
+			[
+				"C",
+				"CharField"
+			],
+			[
+				"passwd",
+				"passwdfile"
+			],
+			[
+				"if",
+				"ifaddresses"
+			],
+			[
+				"pu",
+				"pub_date"
+			],
+			[
+				"ht",
+				"HttpResponse"
+			],
+			[
+				"ar",
+				"argv"
+			],
+			[
+				"nu",
+				"numGoners"
+			],
+			[
+				"num",
+				"numKeepers"
+			],
+			[
+				"sorte",
+				"sorted_goners"
+			],
+			[
+				"sor",
+				"sorted_keepers"
+			],
+			[
+				"d",
+				"text-decoration"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"se",
+				"sans-serif"
+			],
+			[
+				"fo",
+				"font-family"
+			],
+			[
+				"h",
+				"h2	Tag"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"side",
+				"sidebar_contents"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"sidebar",
+				"sidebar_some"
+			],
+			[
+				"some",
+				"sidebar_some"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"u",
+				"u	Tag"
+			],
+			[
+				"al",
+				"vertical-align"
+			],
+			[
+				"t",
+				"td	Tag"
+			],
+			[
+				"top",
+				"text-top"
+			],
+			[
+				"main",
+				"main_header"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"bak",
+				"background-size"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"siz",
+				"font-size"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"bordertop",
+				"border-top-width"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"border-s",
+				"border-style"
+			],
+			[
+				"borderto",
+				"border-top-style"
+			],
+			[
+				"border-top",
+				"border-top-width"
+			],
+			[
+				"bor",
+				"border-top-width"
+			],
+			[
+				"a",
+				"transparent"
+			],
+			[
+				"border-bo",
+				"border-bottom-left-radius"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"left",
+				"border-bottom-left-radius"
+			],
+			[
+				"o",
+				"opacity"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 263.0,
+		"selected_items":
+		[
+			[
+				"tasks",
+				"Tasks: Cancel"
+			],
+			[
+				"taks",
+				"Tasks: New"
+			],
+			[
+				"task",
+				"Tasks: New document"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"gi",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control:",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 507.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/manu/Koodit/mysite/mysite/mysite/lib/network.py",
+		"/home/manu/Koodit/mysite/mysite/mysite/templates/login.html",
+		"/home/manu/Koodit/mysite/mysite/mysite/templates/date.html",
+		"/home/manu/Koodit/mysite/mysite/mysite/settings.py",
+		"/home/manu/Koodit/mysite/mysite/mysite/templates/iptables.html",
+		"/home/manu/Koodit/mysite/mysite/mysite/urls.py",
+		"/home/manu/Koodit/mysite/mysite/TODO",
+		"/home/manu/Koodit/mysite/mysite/mysite/lib/iptables.py",
+		"/home/manu/Koodit/mysite/mysite/mysite/views.py",
+		"/home/manu/Koodit/mysite/mysite/mysite/lib/logreader.py",
+		"/home/manu/Koodit/mysite/mysite/books/templates/search_form.html",
+		"/home/manu/Koodit/mysite/mysite/mysite/templatetags/custom_functions.py",
+		"/home/manu/Koodit/mysite/mysite/mysite/lib/various.py",
+		"/home/manu/Koodit/mysite/mysite/mysite/lib/pamauth.py",
+		"/home/manu/Koodit/mysite/mysite/mysite/templates/css/main.css",
+		"/home/manu/Koodit/mysite/mysite/mysite/lib/test.py",
+		"/home/manu/Koodit/mysite/mysite/books/models.py",
+		"/home/manu/Koodit/mysite/mysite/mysite/templates/users.html",
+		"/home/manu/Koodit/mysite/mysite/mysite/lib/loginRequire.py",
+		"/home/manu/Koodit/mysite/mysite/mysite/lib/loginRequired.py",
+		"/home/manu/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/manu/Dropbox/ipblock.txt",
+		"/home/manu/Koodit/mysite/mysite/mysite/templates/interfaces.html",
+		"/home/manu/Koodit/mysite/mysite/mysite/templates/system.html",
+		"/home/manu/Koodit/mysite/mysite/books/views.py",
+		"/home/manu/Koodit/mysite/mysite/books/templates/search_results.html",
+		"/home/manu/Koodit/mysite/mysite/books/admin.py",
+		"/home/manu/Koodit/mysite/mysite/books/templates/__init__.py",
+		"/home/manu/Koodit/mysite/mysite/mysite/lib/timezone.py",
+		"/home/manu/Koodit/mysite/mysite/mysite/templatetags/__init__.py",
+		"/home/manu/Koodit/mysite/mysite/mysite/lib/__init__.py",
+		"/home/manu/Koodit/piMaster/piMaster/manager/models.py",
+		"/home/manu/Koodit/piMaster/piMaster/piMaster/settings.py",
+		"/home/manu/Koodit/piMaster/piMaster/manager/views.py",
+		"/home/manu/Koodit/piMaster/piMaster/piMaster/urls.py",
+		"/home/manu/.cache/.fr-znYiwr/i686-asustor-linux-gnu/i686-asustor-linux-gnu/sysroot/usr/lib32",
+		"/home/manu/Koodit/CS50/ps2/caesar.c",
+		"/home/manu/Koodit/CS50/ps2/caecar.c",
+		"/home/manu/.bashrc",
+		"/home/manu/Koodit/CS50/hello.c",
+		"/home/manu/Dropbox/Kurssit/2013-2014/Sulautettujenjärjestelmien laboratoriotyöt 1/Työ 10 - Arduino/WebServer/WebServer.ino",
+		"/home/manu/Dropbox/Kurssit/2013-2014/Tietoliikennetekniikan laboratoriotyöt 1 ja 2/Seminaari/esitelmä.txt",
+		"/home/manu/Dropbox/Kurssit/2013-2014/Tietoliikennetekniikan laboratoriotyöt 1 ja 2/Työ 9 - Radiopuhelinmittauksia/mittauspöytäkirja.txt",
+		"/home/manu/Dropbox/Kurssit/2013-2014/Tietoliikennetekniikan laboratoriotyöt 1 ja 2/Työ 9 - Radiopuhelinmittauksia/esiselkkari.txt",
+		"/home/manu/Dropbox/Kurssit/2013-2014/Logistics and transportation/Good_quality.txt",
+		"/home/manu/Koodit/spotify/Reversed binary numbers/solution.py",
+		"/home/manu/chrome_shutdown_ms.txt",
+		"/home/manu/Dropbox/Kurssit/2013-2014/Tietoliikennetekniikan laboratoriotyöt 1 ja 2/Seminaari/esitelmä.pdf",
+		"/home/manu/.config/sublime-text-2/Packages/2pdf/2pdf.sublime-settings",
+		"/home/manu/Dropbox/Kurssit/2013-2014/Tietoliikennetekniikan laboratoriotyöt 1 ja 2/Työ 7 - Lähetin ja vastaanotinmittauksia/Esiselostus",
+		"/home/manu/Dropbox/Kurssit/2013-2014/Tietoliikennetekniikan laboratoriotyöt 1 ja 2/Työ 7 - Lähetin ja vastaanotinmittauksia/Mittauspöytäkirja",
+		"/home/manu/Dropbox/Kurssit/2013-2014/Logistics and transportation/TSF Logistiikka.txt",
+		"/home/manu/Koodit/portscanner/scanner.py",
+		"/home/manu/Dropbox/Kurssit/2013-2014/Tietoliikennetekniikan laboratoriotyöt 1 ja 2/Seminaari/VPLS.txt",
+		"/home/manu/Dropbox/Kurssit/2013-2014/Tietoliikennetekniikan laboratoriotyöt 1 ja 2/Seminaari/VPLS",
+		"/home/manu/Dropbox/Kurssit/2013-2014/Tietoliikennetekniikan laboratoriotyöt 1 ja 2/Työ 5 - Impedanssisovitukset/Esitehtävät.txt",
+		"/home/manu/.cache/.fr-EBChtm/Basic.cpp",
+		"/home/manu/.cache/.fr-Fjb6HN/Pokers.cpp",
+		"/home/manu/Koodit/spotify/Cat vs Dog/input.txt",
+		"/home/manu/Koodit/spotify/Cat vs Dog/task.txt",
+		"/home/manu/Koodit/spotify/Cat vs Dog/solution.py",
+		"/home/manu/Koodit/spotify/Zipf's song/task.txt",
+		"/home/manu/Koodit/spotify/Zipf's song/input.txt",
+		"/home/manu/Koodit/spotify/Zipf's song/solution.py",
+		"/home/manu/Koodit/enigma/rotor.py",
+		"/home/manu/.gvfs/volume_1 on nas/Jussi/Ohjelmointi/Python/muistio.py",
+		"/home/manu/.gvfs/volume_1 on nas/Jussi/Ohjelmointi/Python/functions.py",
+		"/home/manu/.gvfs/volume_1 on nas/Jussi/Ohjelmointi/Python/for_loop.py",
+		"/home/manu/.gvfs/volume_1 on nas/Jussi/Ohjelmointi/Python/functions.pyc",
+		"/home/manu/html/Sivu1/main.css",
+		"/home/manu/html/Sivu1/index.html",
+		"/home/manu/.gvfs/volume_2 on nas/test.txt",
+		"/home/manu/Dropbox/Työnhaku/Kesä 2013/Hakemuksia/Elisa - Harjoittelu Opinnaytetyö - Avoin hakemus/Ilmoitus.txt",
+		"/home/manu/koodit/testi.py",
+		"/home/manu/Asiakirjat/ka.py",
+		"/home/manu/Dropbox/Projektit/Homepage/main.css",
+		"/home/manu/Dropbox/Projektit/Homepage/tech.html",
+		"/home/manu/Dropbox/Projektit/Homepage/index.html",
+		"/home/manu/Dropbox/Projektit/Homepage/cv.html",
+		"/home/manu/Dropbox/Projektit/Homepage/creations.html",
+		"/home/manu/Dropbox/Projektit/Homepage/cv_edu.html",
+		"/home/manu/Dropbox/Projektit/Käyttökone/main.css",
+		"/home/manu/.gvfs/volume_1 on nas.local/ffp.log",
+		"/home/manu/Dropbox/Project dotfi/inspiraatiota.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"1",
+			"h2",
+			"1",
+			"2",
+			"h3",
+			"        ",
+			"max_lenght",
+			"max_length",
+			"max_lenght",
+			"    ",
+			"        ",
+			">\n",
+			"		",
+			"            ",
+			"    ",
+			"        ",
+			"    ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			" OP ",
+			"	",
+			"-115,6",
+			"116,6",
+			"109",
+			"cardPrint",
+			"cardprint",
+			"fi_FI.UTF-8",
+			" ",
+			"\"en\"",
+			",",
+			"utf8",
+			"UTF-8",
+			"en_AU.UTF-8",
+			"en_AU",
+			"en_AU.UTF-8",
+			"5px",
+			"5",
+			"5px",
+			"5",
+			"<td>",
+			"</td>",
+			"<td>",
+			" rotate(3deg)",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
