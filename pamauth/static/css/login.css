@@ -1,0 +1,19 @@
+.login-form {
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: normal;
+	font-family: Lobster, cursive;
+}
+
+img {
+	width: 400px;
+	height: auto;
+}
+
+#wrap {
+	width: 100%;
+	margin: 0 auto;
+}

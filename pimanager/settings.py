@@ -101,6 +101,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_FINDERS = (
+'django.contrib.staticfiles.finders.FileSystemFinder',
+'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
+
 # Template dirs
 TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__),'templates'),
