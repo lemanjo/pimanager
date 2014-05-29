@@ -10,19 +10,17 @@
 
 		</head>
 		<body>
-			<div id="wrap">
-				<h1><span style="color: red;">pi</span>Manager</h1>
-				<img src="{{ STATIC_URL }}img/raspi.jpg" />
-				<form class="login-form" action="/" method="post">
+				<form class="form-container" action="/" method="post">
 					{% csrf_token %}
-					Username:
-					<input type="text" name="username" value="{{ username }}" autofocus/><br />
-					Password:
-					<input type="password" name="password" value="" /><br />
-
-					<input type="submit" value="Log In" />
+					<div class="form-title"><h1><span style="color: red;">pi</span>Manager</h1></div>
+					<div class="form-sub-title">Username</div>
+					<input class="form-field" type="text" name="username" value="{{ username }}" autofocus/><br />
+					<div class="form-sub-title">Password</div>
+					<input class="form-field" type="password" name="password" value="" /><br />
+					<div class="submit-container">
+						<input class="submit-button" type="submit" value="Sign in" />
+					</div>
 				</form>
 				<span style="color: red">{{ state }}</span>
-			</div>
 		</body>
 </html>
