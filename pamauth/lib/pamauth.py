@@ -37,10 +37,8 @@ def pam_authenticate(username=None, password=None):
 				if not "sudo" in Group.objects.all():
 					group = Group.objects.create(name="sudo")
 				else:
-					"Found group sudo."
 					group = Group.objects.get(name="sudo")
 
-				print 'Made user %s sudoer' % username
 				user.groups.add(group)
 				user.save()
 		
