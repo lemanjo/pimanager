@@ -8,22 +8,14 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 import os
+from pimanager import lib
 
 # Function for correct server timezone
 from lib.timezone import gettz
 
-# Import secret key or gen one if needed.
-try:
-    from secret_key import *
-except ImportError:
-    SETTINGS_DIR=os.path.abspath(os.path.dirname(__file__))
-    pimanager.lib.generate_secret_key(os.path.join(SETTINGS_DIR, 'secret_key.py'))
-    from secret_key import *
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -62,6 +54,22 @@ ROOT_URLCONF = 'pimanager.urls'
 
 WSGI_APPLICATION = 'pimanager.wsgi.application'
 
+# Import secret key or gen one if needed.
+try:
+    SECRET_KEY
+except NameError:
+    SECRET_FILE = os.path.join(BASE_DIR, 'secret.txt')
+    try:
+        SECRET_KEY = open(SECRET_FILE).read().strip()
+    except IOError:
+        try:
+            import random
+            SECRET_KEY = ''.join([random.SystemRandom().choice('abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)') for i in range(50)])
+            secret = file(SECRET_FILE, 'w')
+            secret.write(SECRET_KEY)
+            secret.close()
+        except IOError:
+            Exception('Please create a %s file with random characters to generate your secret key!' % SECRET_FILE)
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases

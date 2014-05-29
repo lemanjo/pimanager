@@ -3,4 +3,4 @@
 *.json
 *.sqlite3
 *.sublime-project
-pimanager/secret_key.py
+pimanager/secret.txt
