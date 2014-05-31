@@ -21,15 +21,24 @@
 				<div class="container">
 					<form class="form-signin" action="/" method="post" role="form">
 						{% csrf_token %}
-						<h1 class="form-signin-heading"><span style="color: red;">pi</span>Manager</h1>
+						<div class="span7 text-center">
+							<h1 class="form-signin-heading"><span style="color: red;">pi</span>Manager</h1>
+						</div>
 						<input class="form-control" type="text" name="username" value="{{ username }}" placeholder="Username" autofocus/>
 						<input class="form-control" type="password" name="password" value="" placeholder="Password"  />
-						<button class="btn btn-lg btn-primary btn-block" type="submit"><i class="fa fa-sign-in"></i> Sign-in</button> 
+						<div class="span7 text-center">
+							<button type="submit" class="btn btn-success btn-circle btn-xl"><i class="fa fa-sign-in"></i></button>
+						</div>
+						<!--
+						<button class="btn btn-lg btn-primary btn-block" type="submit"><i class="fa fa-sign-in"></i> Sign-in</button> -->
+
 					</form>
 				</div>
 				{% if state %}
-					<div class="alert alert-danger">
-						{{ state }}
+					<div class="span7 text-center">
+						<div class="alert alert-danger">
+							{{ state }}
+						</div>
 					</div>
 				{% endif %}
 

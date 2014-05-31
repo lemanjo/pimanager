@@ -13,7 +13,6 @@ body {
 .alert {
   max-width: 280px;
   text-align: center;
-  margin: 0 auto;
 }
 
 .form-signin {
@@ -50,4 +49,14 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+    margin: 0 auto;
 }
