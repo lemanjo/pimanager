@@ -5,8 +5,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
 		<link href='{{ STATIC_URL }}css/login.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="{{ STATIC_URL }}font-awesome/css/font-awesome.min.css">
 
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 		</head>
 		<body>
@@ -18,7 +20,7 @@
 					<div class="form-sub-title">Password</div>
 					<input class="form-field" type="password" name="password" value="" /><br />
 					<div class="submit-container">
-						<input class="submit-button" type="submit" value="Sign in" />
+						<button class="submit-button" type="submit"><i class="fa fa-sign-in"></i> Sign-in</button> 
 					</div>
 				</form>
 				<span style="color: red">{{ state }}</span>
