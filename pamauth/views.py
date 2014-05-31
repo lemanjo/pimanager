@@ -18,7 +18,7 @@ def login_view(request):
 
 		# Compare system users to users in DB
 		if not pam_authenticate(username=username, password=password):
-			state = "Your username and/or password were incorrect."
+			state = "Incorrect username or password."
 
 		else:
 			user = authenticate(username=username, password=password)
@@ -30,7 +30,7 @@ def login_view(request):
 					state = "Your account is not active, please contact the site admin."
 
 			else:
-				state = "Your username and/or password were incorrect."
+				state = "Incorrect username or password."
 
 	return render(request,"login.html",RequestContext(request,{'state':state, 'username': username}))
 

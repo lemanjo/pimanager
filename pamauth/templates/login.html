@@ -26,8 +26,12 @@
 						<input class="form-control" type="password" name="password" value="" placeholder="Password"  />
 						<button class="btn btn-lg btn-primary btn-block" type="submit"><i class="fa fa-sign-in"></i> Sign-in</button> 
 					</form>
-					<span style="color: red">{{ state }}</span>
 				</div>
+				{% if state %}
+					<div class="alert alert-danger">
+						{{ state }}
+					</div>
+				{% endif %}
 
 			<!-- bootstrap & jQuery js -->
 			<script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
