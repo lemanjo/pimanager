@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>piManager - Login</title>
-
-		<link href='{{ STATIC_URL }}css/login.css' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="{{ STATIC_URL }}font-awesome/css/font-awesome.min.css">
-
+		<meta charset="utf-8">
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+		<title>piManager - Sign in</title>
+
+		<!-- login.css -->
+		<link href='{{ STATIC_URL }}css/login.css' rel='stylesheet' type='text/css'>
+		
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="{{ STATIC_URL }}font-awesome/css/font-awesome.min.css">
+
+		<!-- bootstrap -->
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/bootstrap.min.css">
+
 		</head>
 		<body>
-				<form class="form-container" action="/" method="post">
-					{% csrf_token %}
-					<div class="form-title"><h1><span style="color: red;">pi</span>Manager</h1></div>
-					<div class="form-sub-title">Username</div>
-					<input class="form-field" type="text" name="username" value="{{ username }}" autofocus/><br />
-					<div class="form-sub-title">Password</div>
-					<input class="form-field" type="password" name="password" value="" /><br />
-					<div class="submit-container">
-						<button class="submit-button" type="submit"><i class="fa fa-sign-in"></i> Sign-in</button> 
-					</div>
-				</form>
-				<span style="color: red">{{ state }}</span>
+				<div class="container">
+					<form class="form-signin" action="/" method="post" role="form">
+						{% csrf_token %}
+						<h2 class="form-signin-heading"><span style="color: red;">pi</span>Manager</h2>
+						<input class="form-control" type="text" name="username" value="{{ username }}" placeholder="Username" autofocus/>
+						<input class="form-control" type="password" name="password" value="" placeholder="Password"  />
+						<button class="btn btn-lg btn-primary btn-block" type="submit"><i class="fa fa-sign-in"></i> Sign-in</button> 
+					</form>
+					<span style="color: red">{{ state }}</span>
+				</div>
+
+			<!-- bootstrap & jQuery js -->
+			<script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
+			<script src="{{STATIC_URL}}js/jquery-1.11.1.min.js"></script>
 		</body>
 </html>
