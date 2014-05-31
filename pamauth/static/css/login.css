@@ -1,3 +1,8 @@
+@font-face {
+   font-family: Lobster;
+   src: url("../fonts/Lobster.otf") format("opentype");
+}
+
 html {
 	background: #606c88; /* Old browsers */
 	background: -moz-linear-gradient(top, #606c88 0%, #3f4c6b 100%); /* FF3.6+ */
