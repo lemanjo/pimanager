@@ -13,6 +13,8 @@ body {
 .alert {
   max-width: 280px;
   text-align: center;
+  float: none;
+  margin: 0 auto;
 }
 
 .form-signin {
