@@ -53,6 +53,11 @@ body {
 	font-weight: bold;
 }
 
+.sidebar-nav hr {
+	margin: 0 0;
+	border-color: #eee;
+}
+
 .sidebar-nav li a {
 	color: #999999;
 	display: block;
