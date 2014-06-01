@@ -29,16 +29,16 @@
 						<div class="span7 text-center">
 							<button type="submit" class="btn btn-success btn-circle btn-xl"><i class="fa fa-sign-in"></i></button>
 						</div>
-						<!--
-						<button class="btn btn-lg btn-primary btn-block" type="submit"><i class="fa fa-sign-in"></i> Sign-in</button> -->
-
 					</form>
+				
+					{% if state %}
+							<div class="span7 text-center">
+								<div class="alert alert-danger">
+									{{ state }}
+								</div>
+							</div>
+					{% endif %}
 				</div>
-				{% if state %}
-						<div class="alert alert-danger">
-							{{ state }}
-						</div>
-				{% endif %}
 
 			<!-- bootstrap & jQuery js -->
 			<script src="{{STATIC_URL}}js/jquery-1.11.1.min.js"></script>
