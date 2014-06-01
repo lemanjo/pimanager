@@ -8,5 +8,5 @@ urlpatterns = patterns('',
     url(r'^$', 'pamauth.views.login_view'),
     url(r'^login/$', 'pamauth.views.login_view'),
     url(r'^logout/$', 'pamauth.views.logout_view'),
-    url(r'^home/$', 'pimanager.views.home'),
+    url(r'^home/$', 'overview.views.home'),
 )
