@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<ul class="nav nav-tabs">
+		<li {% block view_tab %}{% endblock %}><a href={% url "logtailer.views.log_select" %}><i class="fa fa-desktop"></i> Viewer</a></li>
+		<li {% block addlog_tab %}{% endblock %}><a href={% url "logtailer.views.add_log" %}><i class="fa fa-file-text"></i> Add logfile</a></li>
+		<li {% block addfilter_tab %}{% endblock %}><a href={% url "logtailer.views.add_filter" %}><i class="fa fa-filter"></i> Add filter</a></li>
+	</ul>
+
+	{% block logpage %}
+	{% endblock %}
+{% endblock %}

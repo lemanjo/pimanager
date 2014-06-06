@@ -11,7 +11,6 @@ from overview.lib.core_info import *
 def home(request):
 	platform = getplatform()
 	contexts = {
-		"is_sudo": is_sudo(request.user),
 		"hostname": gethostname(),
 		"uptime": getuptime(),
 		"system_time": getsystemtime(),

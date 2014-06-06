@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'pimanager',
     'pamauth',
     'overview',
+    'logtailer',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -113,6 +114,11 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+    )
+
 # Template dirs
 TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__),'templates'),
@@ -130,3 +136,5 @@ LOGIN_REQUIRED_URLS_EXCEPTIONS = (
     r'/login(.*)$',
     r'/logout(.*)$',
 )
+
+LOGTAILER_HISTORY_LINES = 50

@@ -1,3 +1,5 @@
+{% load custom_functions %}
+
 <!DOCTYPE html>
 <html>
 	<meta charset="utf-8">
@@ -35,17 +37,18 @@
 		<div id="wrapper">
 			<div id="sidebar-wrapper">
 			<ul class="sidebar-nav">
-				<li>
-					{% if is_sudo %}
-						<i class="fa fa-check-square-o"></i>
+				<li>{{ user.username }} 
+					<span style="font-size: 10px;">
+						{% ifusergroup sudo %}
+							<i class="fa fa-check-square-o"></i>
 						{% else %}
-						<i class="fa fa-square-o"></i>
-					{% endif %}
-					{{ user.username }} 
+							<i class="fa fa-square-o"></i>
+						{% endifusergroup %}
+					</span
 				</li>
 				<li><hr /></li>
 			    <li><a href={% url "overview.views.home" %}>Overview</a></li>
-			    <li><a href="#">Next link</a></li>
+	    		<li><a href={% url "logtailer.views.log_select" %}>Logs</a></li>
 			    <li><a href="#">Last link</a></li>
 			</ul>
 			</div>
@@ -70,9 +73,11 @@
 		</div> <!-- /wrapper -->
 
 		<!-- bootstrap & jQuery js -->
+
 		<script src="{{STATIC_URL}}js/jquery-1.11.1.min.js"></script>
 		<script src="{{STATIC_URL}}js/bootstrap.min.js"></script>
 		
+		{% block customjs %}
 		<script>
 			$("#menu-toggle").click(function(e) {
 				e.preventDefault();
@@ -81,6 +86,7 @@
 				$("#menu-icon").toggleClass("fa fa-angle-double-left");
 			});
 		</script>
+		{% endblock %}
 
 	</body>
 </html>

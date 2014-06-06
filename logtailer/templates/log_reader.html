@@ -1,0 +1,67 @@
+{% extends "log_select.html" %}
+
+{% load logtailer_utils %}
+{% load i18n %}
+
+{% block logviewer %}
+<from action="" role="form" style="margin-top: 10px;">
+	<div>
+		<table class="table">
+			<tr>
+				<td style="border: none; vertical-align: middle;">
+					<button type="button" class="btn btn-default" id="start-button">
+						<i class="fa fa-play"></i>
+					</button>
+					<button type="button" class="btn btn-default" id="stop-button" style="display: none;">
+						<i class="fa fa-stop"></i>
+					</button>
+				</td>
+				<td style="border: none; vertical-align: middle;">
+					<select class="form-control" name="filters" id="filter-select">
+						<option selected disabled style="display: none;">Filters</option>
+						{%for f in filters%}
+							<option value="{{f.regex}}">{{f.name}} | {{f.regex}}</option>
+						{%endfor%}
+						<option value="custom">Custom</option>	
+					</select>
+				</td>
+				<td style="border: none; vertical-align: middle;">
+					<input type="text" id="filter" style="display: none;" />
+				</td>
+				<td style="border: none; vertical-align: middle;">
+					<span style="font-size: 18px;">Apply:</span>
+					<input type="checkbox" id="apply-filter" value="1"></td>
+		 		<td style="border: none; vertical-align: middle;">
+		 			<span style="font-size: 18px;">Auto scroll:</span>
+		 			<input type="button" class="btn btn-default" id="auto-scroll" style="color: green;" value="ON">
+		 		</td>
+	 		</tr>
+		</table>
+	</div>
+</form>
+<div style="text-align: center; width: 100%; margin-bottom: 5px;">
+    <div id="log-window" rows=40 style="width: 98%; text-align: left;
+     background-color: #000; color: #ccc; font-size: 14px; height: 500px; overflow: auto; padding: 10px;
+     line-height: 18px; margin: 0 auto;"></div>
+</div>
+
+{% endblock %}
+
+{% block customjs %}
+<script type="text/javascript" src="/static/admin/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}logtailer/js/utils.js"></script>
+<script type="text/javascript" src="{{STATIC_URL}}logtailer/js/logtailer.js"></script>
+<script type="text/javascript">
+	LogTailer.file_id = {{logfile_id}};
+</script>
+<script type="text/javascript" src="{{STATIC_URL}}logtailer/js/init.js"></script>
+
+  <script type="text/javascript">
+    {% if logfile_id %}
+    LOGTAILER_URL_GETLOGLINE = "{% url 'logtailer_get_log_lines' file_id=logfile_id %}";
+    LOGTAILER_URL_GETHISTORY = "{% url 'logtailer_get_history' file_id=logfile_id %}";
+    {% endif %}
+  </script>
+{% endblock %}
+

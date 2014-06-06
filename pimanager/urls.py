@@ -9,4 +9,5 @@ urlpatterns = patterns('',
     url(r'^login/$', 'pamauth.views.login_view'),
     url(r'^logout/$', 'pamauth.views.logout_view'),
     url(r'^home/$', 'overview.views.home'),
+    url(r'^logs/', include('logtailer.urls')),
 )
